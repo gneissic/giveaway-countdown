@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    text-transform: capitalize;
+}
+img{
+    width: 600px; 
+    height: 500px;
+}
+.give-away{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 10rem;
+}
+.title{
+    color: rgb(95, 74, 74);
+    font-family: cursive;
+    font-size: 4rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+.give-away-details{
+    margin-bottom: 5rem;
+    width: 30%;
+}
+.header-text{
+    padding-bottom: 3rem;
+}
+.header-text h1{
+    font-size: 2rem;
+    color: coral;
+}
+.giveaway{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(95, 74, 74);
+    font-weight: bold;
+}
+.deadline-container{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.time-out{
+    font-family: 'poppins', sans-serif;
+    border: 1px solid rgb(95, 74, 74);
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+    width: 7rem;
+    color: white;
+    background-color: rgb(95, 74, 74);
+    cursor: pointer;
+}
+.content{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.3rem;
+}
+.time-in{
+    font-style: italic;
+}
+@media (max-width: 1300px) and (min-width: 700px){
+    .give-away{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .give-away-details{
+        gap: 1rem;
+        width: 80%;
+        text-align: center;
+    }
+    .deadline-container{
+        margin: auto;
+        padding: 4rem 12rem;
+    }
+    img{
+        width: 50rem;
+        height: 30rem;
+    }
+    .title{
+        padding-top: 0.5rem;
+        font-size: 3rem;
+    }
+}
+@media (max-width:500px) and (min-width: 200px){
+    .title{
+        font-size: 25px;
+        padding-top: 1rem;
+    }
+   .give-away{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0.5rem;
+   }
+    img{
+        width: 21rem;
+        height: 250px;
+        border-radius: 7px;
+    }
+    .give-away-details{
+        width: 80%;
+    }
+    .content{
+        font-size: 1rem;
+    }
+    .time-out{
+        font-size: 0.8rem;
+    }
+    .deadline-container{
+        gap: 1rem;
+        padding: 0rem 0rem;
+    }
+} 
